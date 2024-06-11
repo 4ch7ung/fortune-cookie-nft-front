@@ -5,7 +5,7 @@ import { useAsyncInitialize } from "./useAsyncInitialize";
 import { Address, OpenedContract } from "@ton/core";
 import { useTonConnect } from "./useTonConnect";
 import { ADDRESSES } from "../addresses";
-import { pseudoRandomBytes } from "crypto";
+
 
 export type FortuneCookieNftCollectionData = {
   ownerAddress: Address,
