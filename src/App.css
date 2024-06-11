@@ -1,0 +1,189 @@
+#root {
+  margin: 0 auto;
+  padding: 16px;
+  text-align: left;
+  color: #fff;
+}
+
+#content {
+  margin-top: 56px;
+}
+
+.header {
+  display: flex;
+  margin: 0 auto;
+  padding: 8px 16px;
+  position: fixed;
+  left: 0;
+  right: 0;
+  top: 0;
+  z-index: 100;
+  background-color: #242e38;
+}
+
+.ton-connect-button {
+  margin-left: auto;
+}
+
+.main {
+  top: 0;
+  margin-top: 0 auto;
+  padding: 16px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+}
+
+.card {
+  margin: 2em;
+  padding-bottom: 8px;
+  text-align: left;
+  display: flex;
+  flex-direction: column;
+  background: #242e38;
+  border-radius: 16px;
+}
+
+.card-header {
+  font-size: 22px;
+  font-weight: 500;
+  padding: 16px;
+  margin: 0;
+  color: #fff;
+  background: #2e3a47;
+  border-top-left-radius: 16px;
+  border-top-right-radius: 16px;
+  display: flex;
+  justify-content: space-between;
+  flex-direction: row;
+  /* border-bottom: 1px solid #8c9aa9; */
+}
+
+button.card-header-button {
+  margin-left: auto;
+  border: none;
+  padding: 2px 7px;
+  font-size: 12px;
+  font-weight: 500;
+  font-family: inherit;
+  color: #0098ea;
+  background-color: transparent;
+  cursor: pointer;
+  transition: border-color 0.25s;
+}
+button.card-header-button:hover {
+  color: #646cff;
+}
+
+.card-item {
+  padding: 8px 16px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: flex-start;
+}
+
+.copy-button-icon {
+  fill: #0098ea;
+  fill-rule: evenodd;
+  clip-rule: evenodd;
+}
+
+.copy-button-icon:hover {
+  fill: #646cff;
+}
+
+.card-item-container {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  gap: 8px;
+  align-items: center;
+  width: 100%;
+}
+
+.card-item-title {
+  font-size: 16px;
+  font-weight: 500;
+  margin: 0;
+  color: #fff;
+}
+
+.card-item-value {
+  font-size: 14px;
+  font-weight: 400;
+  margin: 0;
+  color: #8c9aa9;
+}
+
+button.card-item-button {
+  border-radius: 8px;
+  border: 1px solid transparent;
+  padding: 0.6em 1.2em;
+  font-size: 1em;
+  font-weight: 500;
+  font-family: inherit;
+  color: #fff;
+  background-color: #121214;
+  cursor: pointer;
+  transition: border-color 0.25s;
+}
+button.card-item-button:hover {
+  border-color: #646cff;
+}
+button.card-item-button:focus,
+button.card-item-button:focus-visible {
+  outline: 4px auto -webkit-focus-ring-color;
+}
+
+:root {
+  font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
+  line-height: 1.5;
+  font-weight: 400;
+
+  color-scheme: light dark;
+  color: rgba(255, 255, 255, 0.87);
+  background-color: #1a2026;
+
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+a {
+  font-weight: 500;
+  color: #646cff;
+  text-decoration: inherit;
+}
+a:hover {
+  color: #535bf2;
+}
+
+@media screen and (min-width: 768px) {
+  .main {
+    flex-direction: row;
+  }
+}
+
+@media (prefers-color-scheme: light) {
+  :root {
+    color: #213547;
+    background-color: #ffffff;
+  }
+  button.card-item-button {
+    color: #213547;
+    background-color: #f9f9f9;
+  }
+  button.card-item-button:hover {
+    color: #000;
+    border-color: #9AD5F5;
+  }  
+  .copy-button-icon:hover {
+    fill: #9AD5F5;
+  }
+  button.card-header-button:hover {
+    color: #9AD5F5;
+  }
+}
